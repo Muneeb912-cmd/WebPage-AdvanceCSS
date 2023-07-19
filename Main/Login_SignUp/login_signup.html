@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login and Sign Up</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <h1 style="margin-bottom: 50px; font-size: 40px; color: white;">
+            Welcome back!
+        </h1>
+        <div class="container">
+            <div class="panel">
+                <div class="panel-left">
+                    <div id="SignInForm_" style="display: block;">
+                        <h2
+                            style="text-align: center; font-size: 28px; margin-top: -30px; font-weight: 600;">Sign
+                            In</h2>
+                        <form id="signInForm">
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password"
+                                required>
+                            <a class="link" href="#" style="text-align: end;">Forgot
+                                Password?</a>
+                            <button id="signIn" style="margin-top: 15px;" type="submit">Sign
+                                In</button>
+                        </form>
+                    </div>
+                    <div>
+                        <div id="switch1" style="display: none;">
+                            <h2>Already got an Account?</h2>
+                            <button id="signIpButton">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-right">
+                    <div>
+                        <div id="switch" style="display: block;">
+                            <h2>Don't have an account?</h2>
+                            <button id="signUpButton">Sign Up</button>
+                        </div>
+                    </div>
+                    <div>
+                        <form id="signUpForm" style="display: none;">
+                            <h1 style="text-align: center; font-size: 28px; margin-top: -30px; font-weight: 600; margin-bottom: 20px;">Sign Up</h1>
+                            <p>Fill in the following Fields Carefully!</p>
+                            <input type="text" placeholder="Username" required>
+                            <input type="password" placeholder="Password"
+                                required>
+                            <button style="margin-top: 15px;" type="submit">Sign Up</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../APIs/Switch.js"></script>
+        <script src="../APIs/Navigations.js"></script>
+    </body>
+    <p style="color: white;">Powered By XYZ</p>
+    <p style="color: white; margin-top: 10px;">All right reserved.</p>
+</html>
